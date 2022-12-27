@@ -1,0 +1,52 @@
+#about_us {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 50px);
+  flex-direction: column;
+  padding: 50px 10%;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  height: 70vh;
+}
+
+.about .left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.about .left img {
+  width: 90%;
+}
+
+.about .right h3 {
+  font-size: 35px;
+  color: var(--dark-blue);
+  margin: 10px 0;
+}
+
+.about .right p {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.about .right button {
+  margin: 20px 0;
+  padding: 5px 60px;
+  background-color: var(--green-primary);
+  border: 0;
+}
+
+.about .right button a {
+  color: var(--white);
+  text-decoration: 0;
+  font-weight: bolder;
+}

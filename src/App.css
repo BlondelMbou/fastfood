@@ -6,12 +6,11 @@
   --dark-blue: #273e60;
   --gray: #999;
   --gray-shadow: #0000001a;
-  --white: #FFF;
+  --white: #fff;
   --big-title-size: 40px;
   --mid-title-size: 30px;
   --little-title-size: 20px;
-  --text-size: 15px;
-
+  --text-size: 12px;
 }
 
 * {
@@ -27,6 +26,13 @@
   /* margin: 0;
   padding: 0; */
 }
+.big-dark-blue-title {
+  font-size: var(--mid-title-size);
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  /* margin: 0;
+  padding: 0; */
+}
 
 .mid-title {
   font-size: var(--mid-title-size);
@@ -35,6 +41,16 @@
 
 .little-title {
   font-size: var(--little-title-size);
+  color: var(--black-primary);
+}
+
+.little-title-gray {
+  font-size: var(--little-title-size);
+  color: var(--gray);
+}
+
+.txt {
+  font-size: var(--text-size);
   color: var(--black-primary);
 }
 
