@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import './animations.css'
 import Header from './Header/Header'
@@ -11,12 +11,14 @@ function AppRoot() {
     return (
         <div className="approot">
             <Header />
-            {/* <Hero />
-            <Menu /> */}
+            <Hero />
+            <Menu />
+            <AboutUs />
+            <Testimony />
+            <Reservation />
             <Login />
             <Register />
+            <Footer />
         </div>
     )
-}
 
-export default AppRoot
