@@ -5,21 +5,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--bg-black);
     padding: 50px 10px;
 }
 
 .mini_title {
     margin-top: 25px;
     font-size: 16px;
-    color: #27ae60;
+    color: var(--green-primary);
     text-transform: capitalize;
 }
 
 .title {
     font-size: 20px;
     text-transform: uppercase;
-    color: #273e60;
+    color: var(--dark-blue);
     margin-bottom: 25px;
     text-align: center;
 }
@@ -34,7 +34,7 @@
 .dishes .dish {
     height: 280px;
     width: 30%;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 25px;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     border-radius: 6px;
     margin-bottom: 35px;
     transition: 0.5s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--gray-shadow);
 }
 
 .dishes .dish img {
@@ -61,9 +61,9 @@
     margin-top: 10px;
     font-size: 14px;
     text-decoration: 0;
-    background-color: #27ae60;
+    background-color: var(--green-primary);
     padding: 5px 60px;
-    color: #fff;
+    color: var(--white);
     border-radius: 6px;
 }
 

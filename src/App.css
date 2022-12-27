@@ -2,10 +2,12 @@
 
 :root {
   --green-primary: #27ae60;
+  --green-light: #5ff19c;
   --black-primary: #000;
   --dark-blue: #273e60;
   --gray: #999;
   --gray-shadow: #0000001a;
+  --bg-black: #0000000d;
   --white: #FFF;
   --big-title-size: 40px;
   --mid-title-size: 30px;
