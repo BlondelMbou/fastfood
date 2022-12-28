@@ -18,22 +18,22 @@ function Header() {
       </div>
       <ul class="menu">
         <li>
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#menu">Menu</a>
+          <a href="/#menu">Menu</a>
         </li>
         <li>
-          <a href="#about_us">About Us</a>
+          <a href="/#about_us">About Us</a>
         </li>
         <li>
-          <a href="#reservation">Reservation</a>
+          <a href="/#reservation">Reservation</a>
         </li>
         <li>
-          <a href="#home">Login</a>
+          <a href="/signin">Login</a>
         </li>
         <li>
-          <a href="#menu">Registration</a>
+          <a href="/signup">Registration</a>
         </li>
       </ul>
 

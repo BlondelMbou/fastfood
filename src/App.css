@@ -8,7 +8,7 @@
   --gray: #999;
   --gray-shadow: #0000001a;
   --bg-black: #0000000d;
-  --white: #FFF;
+  --white: #fff;
   --big-title-size: 40px;
   --mid-title-size: 30px;
   --little-title-size: 20px;
@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .approot {
