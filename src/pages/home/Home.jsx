@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './home.css'
 import Hero from './hero/Hero';
 import Menu from './menu/Menu';
 import AboutUs from './aboutUs/AboutUs';

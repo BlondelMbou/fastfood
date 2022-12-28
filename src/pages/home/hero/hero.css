@@ -1,6 +1,6 @@
-/* home CSS */
+/* hero CSS */
 
-#home {
+#hero {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
     justify-content: space-between;
 }
 
-#home .left {
+#hero .left {
     width: 40%;
     height: 100%;
     display: flex;
@@ -18,21 +18,21 @@
     justify-content: center;
 }
 
-#home .left h4 {
+#hero .left h4 {
     font-size: 20px;
     color: var(--green-primary);
 }
 
-#home h1.big-title {
+#hero h1.big-title {
     font-size: 40px;
 }
 
-#home .left p {
+#hero .left p {
     font-size: 12px;
     color: var(--gray);
 }
 
-#home .left button {
+#hero .left button {
     margin-top: 20px;
     width: fit-content;
     padding: 5px 10px;
@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-#home .left button a {
+#hero .left button a {
     text-decoration: 0;
     color: var(--white);
     font-weight: bold;
@@ -51,7 +51,7 @@
     transition: 0.5s;
 }
 
-#home .left button::before {
+#hero .left button::before {
     position: absolute;
     left: 5px;
     top: 5px;
@@ -62,11 +62,11 @@
     background-color: var(--green-primary);
 }
 
-#home .left button:hover a {
+#hero .left button:hover a {
     letter-spacing: 1px;
 }
 
-#home .right {
+#hero .right {
     width: 50%;
     height: 100%;
     display: flex;
@@ -74,39 +74,39 @@
     justify-content: center;
 }
 
-#home .right img {
+#hero .right img {
     width: 100%;
     animation: animate 2s linear;
     transition: 0.5s;
 }
 
 @media (max-width: 964px) {
-	#home {
+	#hero {
 		flex-direction: column;
 		padding: 12px;
 		height: fit-content;
 	}
 
-	#home .left,
-	#home .right {
+	#hero .left,
+	#hero .right {
 		width: 100%;
 		padding: 0;
 	}
 
-	#home .left {
+	#hero .left {
 		margin: 100px 0;
 	}
 
-	#home .left h1 {
+	#hero .left h1 {
 		font-size: 20px;
 		margin-bottom: 15px;
 	}
 
-	#home .left h4 {
+	#hero .left h4 {
 		font-size: 15px;
 	}
 
-	#home .left p {
+	#hero .left p {
 		font-size: 15px;
 	}
 }
