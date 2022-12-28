@@ -27,7 +27,7 @@
 .dishes {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
 }
 
@@ -68,11 +68,9 @@
 }
 
 
-
-
 @media (max-width: 964px) {
     #menu .dishes .dish {
-        width: 100%;
-        max-width: 260px;
+        width: 90%;
+        /* max-width: 260px; */
     }
 }
