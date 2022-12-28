@@ -1,8 +1,9 @@
 import React from 'react';
-import '../../components/Testimony/Testimony.css';
-import img2 from '../../assets/images/img2.png';
-import img5 from '../../assets/images/img5.png';
-import img4 from '../../assets/images/img4.png';
+
+import './testimony.css';
+import img2 from '../../../assets/images/img2.png';
+import img5 from '../../../assets/images/img5.png';
+import img4 from '../../../assets/images/img4.png';
 
 function Testimony() {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
 
 import './hero.css'
-import heroImg from '../../assets/images/img1.png'
+import heroImg from '../../../assets/images/img1.png'
 
 function Hero() {
     return (
-        <section id="home">
+        <section id="hero">
             <div class="left">
                 <h4>Our New Menu</h4>
                 <h1 className='big-title'>AFRICAN CHICKEN</h1>
