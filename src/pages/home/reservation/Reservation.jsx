@@ -1,5 +1,7 @@
 import React from 'react';
-import '../../components/Reservation/Reservation.css';
+
+import './reservation.css';
+
 function Reservation() {
   return (
     <section id="reservation">
