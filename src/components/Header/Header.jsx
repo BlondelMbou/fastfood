@@ -20,6 +20,8 @@ function Header() {
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about_us">About Us</a></li>
                 <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#home">Login</a></li>
+                <li><a href="#menu">Registration</a></li>
             </ul>
 
             <div class="toggle_menu" onClick={toogleMenu} />

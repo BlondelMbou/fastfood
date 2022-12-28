@@ -3,9 +3,14 @@ import React from 'react';
 import './animations.css'
 import Header from './Header/Header'
 import Hero from './Hero/Hero'
-import Login from './Login/Login'
 import Menu from './Menu/Menu'
+import AboutUs from './AboutUs/AboutUs'
+import Testimony from './Testimony/Testimony'
+import Reservation from './Reservation/Reservation'
+import Footer from './Footer/Footer'
+import Login from './Login/Login'
 import Register from './Register/Register'
+// import A from ''
 
 function AppRoot() {
     return (
@@ -13,7 +18,7 @@ function AppRoot() {
             <Header />
             <Hero />
             <Menu />
-            <AboutUs />
+            <AboutUs  />
             <Testimony />
             <Reservation />
             <Login />
@@ -22,3 +27,5 @@ function AppRoot() {
         </div>
     )
 }
+
+export default AppRoot

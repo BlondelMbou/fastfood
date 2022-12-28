@@ -4,7 +4,7 @@ import './login.css'
 
 function Login() {
     return (
-        <div className='login'>
+        <div className='login' id='login'>
             <div className="bubble login-container">
                 {/* <section id="reservation"> */}
                 <div className="titles">
