@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import Home from '../pages/home/Home';
-import Login from '../pages/Login/Login';
+import Login from '../pages/login/Login';
+import Register from '../pages/register/Register';
 import NotFound from '../pages/notFound/NotFound';
-import Register from '../pages/Register/Register';
 
 function Navigator() {
     return (
