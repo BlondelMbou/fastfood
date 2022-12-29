@@ -43,9 +43,9 @@ html {
 }
 
 .big-dark-blue-title {
-  font-size: var(--mid-title-size);
+  font-size: var(--little-title-size);
   color: var(--dark-blue);
-  text-transform: uppercase;
+  text-transform: capitalize;
   /* margin: 0;
   padding: 0; */
 }

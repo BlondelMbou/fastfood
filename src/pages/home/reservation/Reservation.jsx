@@ -5,10 +5,10 @@ import './reservation.css';
 function Reservation() {
   return (
     <section id="reservation">
-      <h4 class="mid-title">Reservation</h4>
-      <h2 className="big-dark-blue-title ">
+      <h2 className="mid-title">Reservation</h2>
+      <h4 className="big-dark-blue-title ">
         fill this form to make a reservation
-      </h2>
+      </h4>
       <form action="">
         <label> Your Name</label>
         <input type="text" />
