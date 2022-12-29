@@ -1,6 +1,7 @@
 /* The header component of application */
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './header.css';
 
@@ -17,23 +18,27 @@ function Header() {
                 </p>
             </div>
             <ul class="menu">
+                {/* <Link to='/signup'>Sig</Link> */}
                 <li>
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/#menu">Menu</Link>
                 </li>
                 <li>
                     <a href="/#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="/#about_us">About Us</a>
+                    <Link to="/#about_us">About Us</Link>
                 </li>
                 <li>
-                    <a href="/#reservation">Reservation</a>
+                    <Link to="/#reservation">Reservation</Link>
                 </li>
                 <li>
-                    <a href="/signin">Login</a>
+                    <Link to="/signin">Login</Link>
                 </li>
                 <li>
-                    <a href="/signup">Registration</a>
+                    <Link to="/signup">Registration</Link>
                 </li>
             </ul>
 
