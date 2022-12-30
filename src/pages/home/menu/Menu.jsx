@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
 
-import https from '../../../components/https'
+import https from '../../../https'
 
 import './menu.css'
 import im5 from '../../../assets/images/img5.png'
 import im1 from '../../../assets/images/img1.png'
 import im3 from '../../../assets/images/img3.png'
 import MenuItem from './MenuItem'
+import { selectUser } from '../../../store/users/selectors'
 
 function Menu() {
     const [dishes, setDishes] = useState([])
+    let user = useSelector(selectUser)
     useEffect(() => {
         getDishes()
 
@@ -29,6 +32,7 @@ function Menu() {
                 console.error("the error ", error)
             })
     }
+    console.log("the user ", user)
     return (
         <section id="menu">
             <h4 class="mini_title">Our menu</h4>

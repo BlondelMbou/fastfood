@@ -1,5 +1,5 @@
 import React from 'react'
-import https from '../../../components/https'
+import https from '../../../https'
 
 function MenuItem({ data }) {
     return (

@@ -18,7 +18,6 @@ function Header() {
                 </p>
             </div>
             <ul class="menu">
-                <Link to='/signup'>Sig</Link>
                 <li>
                     <Link to="/">Home</Link>
                 </li>

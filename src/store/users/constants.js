@@ -1,0 +1,5 @@
+export default {
+    SET_USER: "USER/SET",
+    UPDATE_USER: "USER/UPDATE",
+    REMOVE_USER: "USER/REMOVE"
+}
