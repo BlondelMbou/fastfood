@@ -18,15 +18,12 @@ function Header() {
                 </p>
             </div>
             <ul class="menu">
-                {/* <Link to='/signup'>Sig</Link> */}
+                <Link to='/signup'>Sig</Link>
                 <li>
                     <Link to="/">Home</Link>
                 </li>
                 <li>
                     <Link to="/#menu">Menu</Link>
-                </li>
-                <li>
-                    <a href="/#menu">Menu</a>
                 </li>
                 <li>
                     <Link to="/#about_us">About Us</Link>
