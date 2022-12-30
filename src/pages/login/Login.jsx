@@ -1,11 +1,13 @@
 import React from 'react'
 import { useFormik } from 'formik'
 import * as yup from 'yup'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom'
 
 import './login.css'
+import https from '../../https'
 
 const validationSchema = yup.object({
-    name: yup.string().min(4, "should have at least 4 caracters").required("This field is required"),
+    // name: yup.string().min(4, "should have at least 4 caracters").required("This field is required"),
     email: yup.string().email("Should be a valid email").required("This field is required"),
     password: yup.string().min(4, "invalid password").required("this field is required")
 })
@@ -13,12 +15,26 @@ const validationSchema = yup.object({
 function Login() {
     const formik = useFormik({
         initialValues: {
-            name: '',
+            // name: '',
             email: '',
             password: ''
         }, validationSchema,
-        onSubmit: (user) => console.log("the user of the form ", user)
+        onSubmit: (user) => login(user)
     })
+    let history = useHistory()
+
+    const login = async (user) => {
+        console.log("the user of the form ", user)
+        https.post('/auth/login', user)
+            .then(res => {
+                console.log("the response of login ", res.data)
+                history.push('/')
+            })
+            .catch(error => {
+                console.error('error on login', error)
+                window.alert('Login failed')
+            })
+    }
     return (
         <div className='login' id='login'>
             <div className="bubble login-container">
