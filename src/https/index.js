@@ -12,5 +12,5 @@ export default {
     post: https.post,
     option: https.options,
     delete: https.delete,
-    baseURL
+    baseURL,
 }

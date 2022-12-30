@@ -58,11 +58,13 @@
     outline: 1px solid var(--green-primary);
 }
 
-.register form input[type='submit'] {
+.register form button {
     margin-top: 15px;
+    padding: 2%;
     color: #fff;
     background-color: var(--green-primary);
     border: 1px solid var(--green-primary);
+    cursor: pointer;
 }
 
 .bubble h2, .bubble h4 {
