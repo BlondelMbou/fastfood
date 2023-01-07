@@ -1,0 +1,19 @@
+.input-container {
+    margin: 15px 0px;
+}
+
+.p-inputtext {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    padding: 10px;
+    box-shadow: 0 0 10px var(--gray-shadow);
+    outline: 0;
+}
+
+.p-inputtext:enabled:focus {
+    outline: 1px solid var(--green-primary);
+    border: 1px solid var(--green-primary);
+    box-shadow: 0 0 10px var(--green-primary);
+}

@@ -1,0 +1,6 @@
+export default {
+    ADD: "BASKET/SET_ITEM",
+    UPDATE: "BASKET/UPDATE",
+    REMOVE: "BASKET/REMOVE_ITEM",
+    CLEAR: "BASKET/CLEAR"
+}

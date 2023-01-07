@@ -5,6 +5,8 @@ import {
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
+import { basketReducer } from './basket/reducers'
+import { dishesReducer } from './dishes/reducers'
 import { userReducer } from './users/reducers'
 
 const persistConfig = {
@@ -14,6 +16,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     user: userReducer,
+    basket: basketReducer,
+    dishes: dishesReducer
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

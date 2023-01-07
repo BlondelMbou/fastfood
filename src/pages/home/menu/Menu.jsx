@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { useSelector } from 'react-redux'
+import React, { useState, useEffect, useContext } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import https from '../../../https'
 
@@ -9,30 +9,38 @@ import im1 from '../../../assets/images/img1.png'
 import im3 from '../../../assets/images/img3.png'
 import MenuItem from './MenuItem'
 import { selectUser } from '../../../store/users/selectors'
+import { selectDishes } from '../../../store/dishes/selectors'
+import { setDishes } from '../../../store/dishes/actions'
+import { ToastContext } from '../../../components/shared/toast/Toast'
 
 function Menu() {
-    const [dishes, setDishes] = useState([])
-    let user = useSelector(selectUser)
+    const [dishes, setLocalDishes] = useState(useSelector(selectDishes))   // useSelector(selectDishes)
+    const dispatch = useDispatch()
+    const user = useSelector(selectUser)
+    const toast=useContext(ToastContext)
     useEffect(() => {
-        getDishes()
-
+        // toast.show({severity: 'success', summary: 'Success Message', detail: 'Order submitted'})
+        if (!dishes.length) getDishes()
+        else console.log("we already have dishes")
         return () => {
 
         }
     }, [])
-
     const getDishes = async () => {
         https.get('/items/Dishes')
             .then(({ data }) => {
                 console.log("the response ", data)
-                setDishes(data.data)
+                setLocalDishes(data.data)
+                dispatch(setDishes(data.data))
             })
             .catch(error => {
                 window.alert('there is an error on dish fetching')
                 console.error("the error ", error)
             })
     }
-    console.log("the user ", user)
+    // console.log("the user ", user)
+    // console.log("the dishes ", dishes)
+    console.log("the toast ", toast)
     return (
         <section id="menu">
             <h4 class="mini_title">Our menu</h4>

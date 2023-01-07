@@ -10,9 +10,10 @@ import { useDispatch } from 'react-redux'
 import './login.css'
 import https from '../../https'
 import { setUser } from '../../store/users/actions';
+import Input from '../../components/shared/inputs/Input';
 
 const validationSchema = yup.object({
-    // name: yup.string().min(4, "should have at least 4 caracters").required("This field is required"),
+    name: yup.string().min(4, "should have at least 4 caracters").required("This field is required"),
     email: yup.string().email("Should be a valid email").required("This field is required"),
     password: yup.string().min(4, "invalid password").required("this field is required")
 })
@@ -21,7 +22,7 @@ function Login() {
     const [loading, setLoading] = useState('')
     const formik = useFormik({
         initialValues: {
-            // name: '',
+            name: '',
             email: '',
             password: ''
         }, validationSchema,
@@ -53,7 +54,7 @@ function Login() {
     }
     const handleLoading = (element) => loading == element
 
-
+    // console.log("the formik values ", formik.values)
     return (
         <div className='login' id='login'>
             <div className="bubble login-container">
@@ -63,16 +64,18 @@ function Login() {
                     <h2 class="title">Fill this form to get connected to application</h2>
                 </div>
                 <form action="" onSubmit={formik.handleSubmit}>
-                    <label> Your Name</label>
-                    <input type="text" name='name' onChange={formik.handleChange} />
-                    <label> Your Email</label>
-                    <input type="email" name='email' onChange={formik.handleChange} />
-                    <label> Your Password</label>
-                    <input type="password" name='password' onChange={formik.handleChange} />
+                    <Input name='name' type='text' label="Enter name" errorText="Username is not available."
+                        error={formik.touched.name && formik.errors.name}
+                        change={formik.handleChange} blur={formik.handleBlur}
+                    />
+                    <Input name='email' type='text' label="Enter email" errorText="Email is not available." error={formik.touched.email && formik.errors.email}
+                        change={formik.handleChange} blur={formik.handleBlur}
+                    />
+                    <Input name='password' type='password' label="Enter password" errorText="Username is not available." error={formik.touched.password && formik.errors.password}
+                        change={formik.handleChange} blur={formik.handleBlur}
+                    />
                     <Button label="Login" type='submit' loading={handleLoading('button')}
                         onClick={formik.handleSubmit} />
-                    {/* <input type="submit" value="Make The Reservation" /> */}
-                    {/* <button>Make a reservation</button> */}
                     <Toast ref={toast} />
                 </form>
             </div>

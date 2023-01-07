@@ -48,7 +48,7 @@
     font-size: 14px;
 }
 
-.login form input {
+/* .login form input {
     margin-bottom: 10px;
     padding: 5px;
     border: 1px solid transparent;
@@ -58,7 +58,7 @@
 
 .login form input:focus {
     outline: 1px solid var(--green-primary);
-}
+} */
 
 .login form button {
     margin-top: 15px;

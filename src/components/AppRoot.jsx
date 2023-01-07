@@ -11,14 +11,17 @@ import "primeicons/primeicons.css";                                //icons css
 
 import './animations.css'
 import Navigator from '../navigation/Navigator';
+import Toast from './shared/toast/Toast';
 
 function AppRoot() {
     return (
         <div className="approot">
             <ReduxProvider store={store} >
-                <PersistGate persistor={persistor}>
+                {/* <PersistGate persistor={persistor}> */}
+                <Toast>
                     <Navigator />
-                </PersistGate>
+                </Toast>
+                {/* </PersistGate> */}
             </ReduxProvider>
         </div>
     )
