@@ -56,7 +56,7 @@ function Login() {
 
     // console.log("the formik values ", formik.values)
     return (
-        <div className='login' id='login'>
+        <div className='login page' id='login'>
             <div className="bubble login-container">
                 {/* <section id="reservation"> */}
                 <div className="titles">

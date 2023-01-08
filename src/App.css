@@ -3,6 +3,7 @@
 :root {
   --green-primary: #27ae60;
   --green-light: #5ff19c;
+  --red: #ef1944;
   --black-primary: #000;
   --dark-blue: #273e60;
   --gray: #999;
@@ -33,6 +34,11 @@ html {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.page {
+  flex: 1;
+  margin-top: 10vh;
 }
 
 .big-title {

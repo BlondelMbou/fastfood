@@ -1,0 +1,10 @@
+.item .button {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: var(--green-primary);
+    border: 0;
+    transition: 0.5s;
+    position: relative;
+    cursor: pointer;
+}

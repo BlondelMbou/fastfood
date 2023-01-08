@@ -7,6 +7,8 @@ import Home from '../pages/home/Home';
 import Login from '../pages/login/Login';
 import Register from '../pages/register/Register';
 import NotFound from '../pages/notFound/NotFound';
+import Item from '../pages/item/Item';
+import Basket from '../pages/basket/Basket';
 
 function Navigator() {
     return (
@@ -16,6 +18,8 @@ function Navigator() {
                 <Route path='/' exact component={Home} />
                 <Route path='/signin' exact component={Login} />
                 <Route path='/signup' exact component={Register} />
+                <Route path='/item/:id' exact component={Item} />
+                <Route path='/basket' exact component={Basket} />
                 <Route path='*' component={NotFound} />
             </Switch>
             <Footer />

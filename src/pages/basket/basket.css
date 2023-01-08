@@ -1,0 +1,42 @@
+.basket .content {
+    width: 70%;
+}
+.basket-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basket .item-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.basket .item-row.head {
+    font-weight: bold;
+}
+
+.basket .item-row:nth-child(even) {
+    background: rgba(214, 214, 214, 0.192);
+}
+
+.basket .item-row:hover {
+    background: rgba(214, 214, 214, 0.192);
+    cursor: pointer;
+}
+.basket .total {
+    width: 25%;
+    text-align: center;
+}
+.basket .button {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: var(--green-primary);
+    border: 0;
+    color: var(--white);
+    transition: 0.5s;
+    cursor: pointer;
+}

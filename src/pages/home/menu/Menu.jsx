@@ -8,7 +8,6 @@ import im5 from '../../../assets/images/img5.png'
 import im1 from '../../../assets/images/img1.png'
 import im3 from '../../../assets/images/img3.png'
 import MenuItem from './MenuItem'
-import { selectUser } from '../../../store/users/selectors'
 import { selectDishes } from '../../../store/dishes/selectors'
 import { setDishes } from '../../../store/dishes/actions'
 import { ToastContext } from '../../../components/shared/toast/Toast'
@@ -16,7 +15,6 @@ import { ToastContext } from '../../../components/shared/toast/Toast'
 function Menu() {
     const [dishes, setLocalDishes] = useState(useSelector(selectDishes))   // useSelector(selectDishes)
     const dispatch = useDispatch()
-    const user = useSelector(selectUser)
     const toast=useContext(ToastContext)
     useEffect(() => {
         // toast.show({severity: 'success', summary: 'Success Message', detail: 'Order submitted'})

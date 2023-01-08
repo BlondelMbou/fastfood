@@ -57,7 +57,7 @@ function Register() {
 
 
     return (
-        <div className='register' id='registration'>
+        <div className='register page' id='registration'>
             <div className="bubble register-container">
                 {/* <section id="reservation"> */}
                 <div className="titles">

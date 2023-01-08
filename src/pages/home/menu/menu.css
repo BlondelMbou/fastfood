@@ -50,6 +50,7 @@
     width: 130px;
     height: 120px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .dishes .dish p {
@@ -57,14 +58,16 @@
     font-size: 18px;
 }
 
-.dishes .dish a {
+.dishes .dish button {
     margin-top: 10px;
     font-size: 14px;
     text-decoration: 0;
     background-color: var(--green-primary);
     padding: 5px 60px;
     color: var(--white);
+    border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 

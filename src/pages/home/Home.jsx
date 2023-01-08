@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './home.css'
 import Hero from './hero/Hero';
 import Menu from './menu/Menu';
 import AboutUs from './aboutUs/AboutUs';
@@ -9,7 +8,7 @@ import Reservation from './reservation/Reservation';
 
 function Home() {
     return (
-        <div className='home'>
+        <div className='page'>
             <Hero />
             <Menu />
             <AboutUs />
